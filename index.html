@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="content-type" content="text/html">
         <meta charset="utf-8">
-        <title>модный опрос</title>
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="">
+        <title>опросы о моде</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <script src="js/animations.js"></script>
+        <script src="js/q-content.js"></script>
+        <script src="js/components-maker.js"></script>
     </head>
     <body>
         <header>
-            404.
-            эта страница еще не создана. (?)
+            <div class="logo">Fashion Survey</div>
+            <!--<nav class="menu">
+                <div class="menu-item"><a href="#">о нас</a></div>
+                <div class="menu-item"><a href="#">услуги</a></div>
+                <div class="menu-item"><a href="#">напишите нам</a></div>
+            </nav>-->
         </header>
+        <section class="container" data-opacity>
+            <h1 class="container-h1">Коротенькие опросы за призы и бонусы!</h1>
+            <div class="container-slot">
+                <p class="container-p">
+                    Пройдите опрос, отвечая на простые вопросы, и получите подарок от магазина <span class="b-label">sunlight<sup>&reg;</sup></span>
+                </p>
+                <p class="container-p cursive">только для девушек</p>
+                <p class="container-p">Всего 6 простых вопроса</p>
+            </div>
+        </section>
+        <section class="container bg-hide" data-q-component>
+            <div class="container-slot">
+                <div class="inflater">
+                    <button class="btn-f" id ="btn-f">пройти опрос</button>
+                </dic>
+            </div>
+        </section>
+        <script>
+
+            window.addEventListener("DOMContentLoaded", function() {
+                setTimeout(function() {
+                    var anim = new Animation("[data-opacity]");
+                    anim.opacity();
+                }, 1400);
+
+                var autoClick = new Event("click");
+                setTimeout(function() {
+                    document.getElementById("btn-f").dispatchEvent(autoClick);
+                }, 2300);
+
+                var comp = new Component(qData, "[data-q-component]");
+
+                document.getElementById("btn-f").onclick = function() {
+                    comp.creatQElements();
+                }
+
+            });
+        </script>
     </body>
+
 </html>
