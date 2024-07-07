@@ -82,12 +82,12 @@ input::webkit-input-placeholder {
     letter-spacing: 3px;
 }
 .b-label sup {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
 }
 .cursive {
     font-family: Caveat, sans-serif;
     text-align: right;
-    font-size: 45px;
+    font-size: 31px;
 }
 .inflater {
     width: 100%;
