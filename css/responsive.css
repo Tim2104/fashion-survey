@@ -1,16 +1,16 @@
 @media screen and (max-width: 480px) {
     .logo {
-        font-size: 2.1rem;
-        width: 60vw;
+        font-size: 1.8rem;
+        width: 65vw;
         margin: 4px auto;
     }
     .container {
         padding: 6px;
         margin: 18px auto;
-        font-size: 26px;
+        font-size: 21px;
     }
     .container .container-h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
     .container .container-p {
         margin-top: 30px;
@@ -29,17 +29,17 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .logo {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         width: 40vw;
         margin: 6px auto;
     }
     .container {
         padding: 12px;
         margin: 14px auto;
-        font-size: 26px;
+        font-size: 21px;
     }
     .container .container-h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
     .container .container-p {
         margin-top: 19px;
@@ -62,7 +62,7 @@
         width: 90%;
         padding: 0;
         margin: 34px auto;
-        font-size: 28px;
+        font-size: 26px;
     }
     .container .container-h1 {
         font-size: 32px;
