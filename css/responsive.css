@@ -1,16 +1,16 @@
 @media screen and (max-width: 480px) {
     .logo {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         width: 65vw;
         margin: 4px auto;
     }
     .container {
         padding: 6px;
         margin: 18px auto;
-        font-size: 21px;
+        font-size: 18px;
     }
     .container .container-h1 {
-        font-size: 26px;
+        font-size: 23px;
     }
     .container .container-p {
         margin-top: 30px;
@@ -36,10 +36,10 @@
     .container {
         padding: 12px;
         margin: 14px auto;
-        font-size: 21px;
+        font-size: 18px;
     }
     .container .container-h1 {
-        font-size: 26px;
+        font-size: 23px;
     }
     .container .container-p {
         margin-top: 19px;
