@@ -86,11 +86,17 @@ function Component(data, container) {
     }
 
     this.createQLink = function() {
-        cont.classList.add("bg-hide");
-        var a = document.createElement("a");
-        a.textContent = "получить приз!";
+        //cont.classList.add("bg-hide");
+        var a = document.createElement("a"), p = document.createElement("p"), qrpath = "qr.jpg";
+        a.textContent = "получить QR-код!";
         a.href="https://tinyurl.com/uppdatesnew";
         a.classList.add("btn-f");
+        p.innerHTML = `
+            Благодарим за ответы! Теперь вам доступен подарок от магазина SUNLIGHT.<br>
+            Для этого скачайте QR-код и покажите его в любом магазине.<br>
+            <img src="${qrpath}" style="display:block;margin:0 auto;" width="60" alt="qr-code">
+        `;
+        cont.appendChild(p);
         cont.appendChild(a);
     }
 
